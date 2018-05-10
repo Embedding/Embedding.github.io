@@ -86,41 +86,22 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#welcome-to-chinese-word-vector-service">Welcome to Chinese word vector service</a></li>
-            <li><a href="#corpus">Corpus</a></li>
-            <li><a href="#ngram2vec-toolkit">Ngram2vec toolkit</a></li>
-            <li><a href="#arbitrary-context-features">Arbitrary context features</a></li>
-            <li><a href="#arbitrary-models">Arbitrary models</a></li>
-            <li><a href="#benchmark-chinese-analogical-questions">Benchmark (Chinese analogical questions)</a></li>
-            <li><a href="#evaluation-toolkit">Evaluation toolkit</a></li>
-            <li><a href="#pre-trained-chinese-word-vectors">Pre-trained Chinese word vectors</a></li>
+        <li class="main active"><a href="#evaluation-toolkit">Evaluation Toolkit</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-chinese-word-vector-service">Welcome to Chinese word vector service</h1>
-<p>For full documentation visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="corpus">Corpus</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="ngram2vec-toolkit">Ngram2vec toolkit</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.  asdasdasd
+<h2 id="evaluation-toolkit">Evaluation Toolkit</h2>
+<p>We present an evaluation toolkit in <a href="https://github.com/Embedding/Chinese-Word-Vectors/tree/master/evaluation"><strong>evaluation</strong></a> folder. </p>
+<p>Run the following codes to evaluate your trained dense vectors.</p>
+<pre><code>$ python ana_eval_dense.py -v &lt;vector.txt&gt; -a CA8/morphological.txt
+$ python ana_eval_dense.py -v &lt;vector.txt&gt; -a CA8/semantic.txt
 </code></pre>
-<h2 id="arbitrary-context-features">Arbitrary context features</h2>
-<h4 id="word">Word</h4>
-<h4 id="ngram">Ngram</h4>
-<h4 id="character">Character</h4>
-<h2 id="arbitrary-models">Arbitrary models</h2>
-<h2 id="benchmark-chinese-analogical-questions">Benchmark (Chinese analogical questions)</h2>
-<h2 id="evaluation-toolkit">Evaluation toolkit</h2>
-<h2 id="pre-trained-chinese-word-vectors">Pre-trained Chinese word vectors</h2></div>
+
+<p>Run the following codes to evaluate your sparse vectors.</p>
+<pre><code>$ python ana_eval_sparse.py -v &lt;vector.txt&gt; -a CA8/morphological.txt
+$ python ana_eval_sparse.py -v &lt;vector.txt&gt; -a CA8/semantic.txt
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
