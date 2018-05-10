@@ -87,185 +87,286 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#pre-trained-chinese-word-vectors">Pre-trained Chinese word vectors</a></li>
+            <li><a href="#basic-settings">Basic Settings</a></li>
+            <li><a href="#various-domains">Various Domains</a></li>
+            <li><a href="#various-co-occurrence-information">Various Co-occurrence Information</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <h2 id="pre-trained-chinese-word-vectors">Pre-trained Chinese word vectors</h2>
-<p>The word vectors trained by different representation methods, context features, and corpora.</p>
+<h3 id="basic-settings">Basic Settings</h3>
 <table>
-<thead>
-<tr>
-<th>Corpus/representations-feature</th>
-<th>word2vec-word</th>
-<th>word2vec-ngram</th>
-<th>word2vec-character</th>
-<th>PPMI-word</th>
-<th>PPMI-ngram</th>
-<th>PPMI-character</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Baidu Encyclopedia 百度百科</td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-</tr>
-<tr>
-<td>Wikipedia_zh 中文维基百科</td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-</tr>
-<tr>
-<td>People's Daily News 人民日报</td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-</tr>
-<tr>
-<td>Sogou News 搜狗新闻</td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-</tr>
-<tr>
-<td>Financial News 金融新闻</td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-</tr>
-<tr>
-<td>Zhihu_QA 知乎问答</td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-</tr>
-<tr>
-<td>Weibo 微博</td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-</tr>
-<tr>
-<td>Literature 文学作品</td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-</tr>
-<tr>
-<td>The Four Categories 四库全书</td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-</tr>
-<tr>
-<td>Mixed-large</td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-<td><a href="http://www.baidu.com">300</a></td>
-</tr>
-</tbody>
+  <tr align="center">
+    <td><b>Window Size</b></td>
+    <td><b>Dynamic Window</b></td>
+    <td><b>Sub-sampling</b></td>
+    <td><b>Low-Frequency Word</b></td>
+  </tr>
+  <tr align="center">
+    <td>5</td>
+    <td>Yes</td>
+    <td>1e-5</td>
+    <td>10</td>
+  </tr>
 </table>
-<p>The word vectors trained upon different co-occurrence statistics. SGNS is used for training and Baidu Encyclopedia is used as training corpus. Target and context vectors are often called input and output vectors in some related papers. Notice that one can obtain vectors of arbitrary linguistic units beyond word. For example, one can obtain character and radical vectors by downloading context vectors in word-character and word-radical rows</p>
+
+<h3 id="various-domains">Various Domains</h3>
+<p>Chinese Word Vectors trained with different representations, context features, and corpora.</p>
+<table align="center">
+    <tr align="center">
+        <td></td>
+        <td colspan="4"><b>Word2ec / Skip-Gram with Negative Sampling (SGNS)</b></td>
+    </tr>
+    <tr  align="center">
+      <td>Corpus</td>
+      <td>Word</td>
+      <td>Word + Ngram</td>
+      <td>Word + Character</td>
+      <td>Word + Character + Ngram</td>
+    </tr>
+    <tr  align="center">
+      <td>Baidu Encyclopedia 百度百科</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Wikipedia_zh 中文维基百科</td>
+      <td><a href="https://pan.baidu.com/s/1bqtoXFJTawJ-0d0-E_SXbQ">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1aQGcEX2GiIkplTKfwaA8Yw">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1sgj5K1OjqSbIj02MJ3DSYw">300d</a></td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>People's Daily News 人民日报</td>
+      <td><a href="https://pan.baidu.com/s/17er0CP00DUpH40lNsIKW1g">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1vdPSI6fOo9ALS6HNhNjezA">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1JYVG5JJz-LkIQRh-Y2k77w">300d</a></td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Sogou News 搜狗新闻</td>
+      <td><a href="https://pan.baidu.com/s/1UyHTRF7LOqd3W9nehoS_xg">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1niyJ2DtrAViSQA1VqdKcNA">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1VJDR5r5pZ3mSzUeb454CMg">300d</a></td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Financial News 金融新闻</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Zhihu_QA 知乎问答 </td>
+      <td><a href="https://pan.baidu.com/s/1wn3a3Vo5eA_Hxdbbxff-rw">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1SnefWeGHQhw_yG14JYDZiw">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1wDlK9oPVESvScmXqYtQvvw">300d</a></td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Weibo 微博</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Literature 文学作品</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Complete Library in Four Sections<br />四库全书<sup>*</sup></td>
+      <td colspan="4">300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Mixed-large 综合</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+    </tr>
+</table>
+
+<table align="center">
+    <tr align="center">
+        <td></td>
+        <td colspan="4"><b>Positive Pointwise Mutual Information (PPMI)</b></td>
+    </tr>
+    <tr  align="center">
+      <td>Corpus</td>
+      <td>Word</td>
+      <td>Word + Ngram</td>
+      <td>Word + Character</td>
+      <td>Word + Character + Ngram</td>
+    </tr>
+    <tr  align="center">
+      <td>Baidu Encyclopedia 百度百科</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Wikipedia_zh 中文维基百科</td>
+      <td><a href="https://pan.baidu.com/s/1m4Yppo2JpV4_0qZazPqcFw">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1-_UB1CV96WQN0yp3v9kcOA">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/12YZmPb8fZZwOzn9kI6hb0g">300d</a></td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>People's Daily News 人民日报</td>
+      <td><a href="https://pan.baidu.com/s/1FN2BpELh1jzebnr4q0_60A">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1mHkVFJkdYQkzrf_-yzxIhg">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1WW2tlEdQBufjj9ubWFICHg">300d</a></td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Sogou News 搜狗新闻</td>
+      <td><a href="https://pan.baidu.com/s/19FJqCtYWBU4SZUYmCzegvA">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/13N7yFouswT1c9nng57sbDg">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1crPFyGwR5YHA33C5R_WTpQ">300d</a></td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Financial News 金融新闻</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Zhihu_QA 知乎问答 </td>
+      <td><a href="https://pan.baidu.com/s/1FZBtQJh4LzSzSrwGcT7mpA">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1jUCSuOFqgbY_DCWV6WwgxQ">300d</a></td>
+      <td><a href="https://pan.baidu.com/s/1TQ8tWlGfEFaSutCJVjPLWQ">300d</a></td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Weibo 微博</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Literature 文学作品</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+    </tr>
+    <tr  align="center">
+      <td>Complete Library in Four Sections<br />四库全书<sup>*</sup></td>
+      <td colspan="4">300d</td>
+    </tr>
+    </tr>
+    <tr  align="center">
+      <td>Mixed-large 综合</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+      <td>300d</td>
+    </tr>
+</table>
+
+<p><sup>*</sup>Character embeddings are provided, since most of Hanzi are words in the archaic Chinese.</p>
+<h3 id="various-co-occurrence-information">Various Co-occurrence Information</h3>
+<p>We release word vectors upon different co-occurrence statistics. Target and context vectors are often called input and output vectors in some related papers. </p>
+<p>In this part, one can obtain vectors of arbitrary linguistic units beyond word. For example, character vectors is in the context vectors of word-character.</p>
+<p>All vectors are trained by SGNS on Baidu Encyclopedia.</p>
 <table>
-  <tr>
-    <th>Feature</th>
-    <th>Co-occurrence type</th>
-    <th>Pre-trained word vectors</th>
-  </tr>
-  <tr>
-    <td> word </td>
-    <td> word-word </td>
-    <td> <a href="http://www.baidu.com">target</a>; <a href="http://www.baidu.com">context</a> </td>
-  </tr>
-  <tr>
-    <td rowspan="3"> ngram </td>
-    <td> word-bigram </td>
-    <td> <a href="http://www.baidu.com">target</a>; <a href="http://www.baidu.com">context</a> </td>
-  <tr>
-    <td> word-trigram </td>
-    <td> <a href="http://www.baidu.com">target</a>; <a href="http://www.baidu.com">context</a> </td>
-  </tr>
-  <tr>
-    <td> bigram-bigram </td>
-    <td> <a href="http://www.baidu.com">target</a>; <a href="http://www.baidu.com">context</a> </td>
+  <tr align="center">
+    <td><b>Feature</b></td>
+    <td><b>Co-occurrence Type</b></td>
+    <td><b>Target Word Vectors</b></td>
+    <td><b>Context Word Vectors</b></td>
   </tr>
 
-  <tr>
-    <td rowspan="3"> character </td>
-    <td> word-character (1) </td>
-    <td> <a href="http://www.baidu.com">target</a>; <a href="http://www.baidu.com">context</a> </td>
-  <tr>
-    <td> word-character (1-2) </td>
-    <td> <a href="http://www.baidu.com">target</a>; <a href="http://www.baidu.com">context</a> </td>
-  </tr>
-  <tr>
-    <td> word-character (1-4) </td>
-    <td> <a href="http://www.baidu.com">target</a>; <a href="http://www.baidu.com">context</a> </td>
+  <tr align="center">
+    <td rowspan="1">Word</td>
+    <td>Word → Word</td>
+    <td><a href="https://pan.baidu.com/s/1P_jpFuPI6K36PlmOLvdRJA">300d</a></td>
+    <td><a href="https://pan.baidu.com/s/1XlOOon_NQtnhSKYbgwXEtA">300d</a></td>
   </tr>
 
-  <tr>
-    <td> radical </td>
-    <td> radical </td>
-    <td> <a href="http://www.baidu.com">target</a>; <a href="http://www.baidu.com">context</a> </td>
-  <tr>
-
-  <tr>
-    <td rowspan="2"> position </td>
-    <td> word-word(left/right) (1) </td>
-    <td> <a href="http://www.baidu.com">target</a>; <a href="http://www.baidu.com">context</a> </td>
-  <tr>
-    <td> word-word(distance) </td>
-    <td> <a href="http://www.baidu.com">target</a>; <a href="http://www.baidu.com">context</a> </td>
+  <tr align="center">
+    <td rowspan="3">Ngram</td>
+    <td>Word → Ngram (1-2)</td>
+    <td><a href="https://pan.baidu.com/s/1C59ebYO14o1otnt3CK5cVA">300d</a></td>
+    <td><a href="https://pan.baidu.com/s/1gdCpq0nsAhoFxKqctyOtzA">300d</a></td>
+  </tr>
+  <tr align="center">
+    <td>Word → Ngram (1-3)</td>
+    <td>300d</td>
+    <td>300d</td>
+  </tr>
+  <tr align="center">
+    <td>Ngram (1-2) → Ngram (1-2)</td>
+    <td><a href="https://pan.baidu.com/s/1Fdf4OXZoG138aLZMBsNVnw">300d</a></td>
+    <td><a href="https://pan.baidu.com/s/1bMxYF7mwiCi_TQx799FhEQ">300d</a></td>
   </tr>
 
-  <tr>
-    <td> global </td>
-    <td> word-text </td>
-    <td> <a href="http://www.baidu.com">target</a>; <a href="http://www.baidu.com">context</a> </td>
-  <tr>
-
-  <tr>
-    <td rowspan="2"> syntactic feature </td>
-    <td> word-POS </td>
-    <td> <a href="http://www.baidu.com">target</a>; <a href="http://www.baidu.com">context</a> </td>
-  <tr>
-    <td> word-dependency </td>
-    <td> <a href="http://www.baidu.com">target</a>; <a href="http://www.baidu.com">context</a> </td>
+  <tr align="center">
+    <td rowspan="3">Character</td>
+    <td>Word → Character (1)</td>
+    <td><a href="https://pan.baidu.com/s/1QoWF_Xe5MQHT0jG8Q95RZg">300d</a></td>
+    <td><a href="https://pan.baidu.com/s/1GNdDPjgZuq0ES9xE_ASNxw">300d</a></td>
+  </tr>
+  <tr align="center">
+    <td>Word → Character (1-2)</td>
+    <td><a href="https://pan.baidu.com/s/1MsNSYjuglTROrojd9Ce2Xg">300d</a></td>
+    <td><a href="https://pan.baidu.com/s/1ewUYm01u0K_xrg3tDJ9kDw">300d</a></td>
+  </tr>
+  <tr align="center">
+    <td>Word → Character (1-4)</td>
+    <td><a href="https://pan.baidu.com/s/1JAfw3-NQoWmSKiwDrCJXhg">300d</a></td>
+    <td><a href="https://pan.baidu.com/s/1t2q8xLxljgy6ekOwNZaKeA">300d</a></td>
   </tr>
 
+  <tr align="center">
+    <td rowspan="1">Radical</td>
+    <td>Radical</td>
+    <td>300d</td>
+    <td>300d</td>
+  </tr>
+
+  <tr align="center">
+    <td rowspan="2">Position</td>
+    <td>Word → Word (left/right)</td>
+    <td><a href="https://pan.baidu.com/s/1bS-T-pXJCOxueuE-PDbYpA">300d</a></td>
+    <td><a href="https://pan.baidu.com/s/1_jOOm6YxZhBEjPL5aP8ezQ">300d</a></td>
+  </tr>
+  <tr align="center">
+    <td>Word → Word (distance)</td>
+    <td><a href="https://pan.baidu.com/s/1gnoAeaYGQrMWb-etfWSIQA">300d</a></td>
+    <td><a href="https://pan.baidu.com/s/1DrCNkHJgeh0QBWKWvouboQ">300d</a></td>
+  </tr>
+
+  <tr align="center">
+    <td>Global</td>
+    <td>Word → Text</td>
+    <td>300d</td>
+    <td>300d</td>
+  </tr>
+
+  <tr align="center">
+    <td rowspan="2">Syntactic Feature</td>
+    <td>Word → POS</td>
+    <td>300d</td>
+    <td>300d</td>
+  </tr>
+  <tr align="center">
+    <td>Word → Dependency</td>
+    <td>300d</td>
+    <td>300d</td>
+  </tr>
 </table></div>
         </div>
 
