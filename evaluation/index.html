@@ -87,13 +87,16 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#evaluation-toolkit">Evaluation Toolkit</a></li>
+            <li><a href="#intrinsic">Intrinsic</a></li>
+            <li><a href="#extrinsic">Extrinsic</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <h2 id="evaluation-toolkit">Evaluation Toolkit</h2>
+<h3 id="intrinsic">Intrinsic</h3>
 <p>We present an evaluation toolkit in <a href="https://github.com/Embedding/Chinese-Word-Vectors/tree/master/evaluation"><strong>evaluation</strong></a> folder. </p>
-<p>Run the following codes to evaluate your trained dense vectors.</p>
+<p>Run the following codes to evaluate your trained dense vectors on intrinsic tasks.</p>
 <pre><code>$ python ana_eval_dense.py -v &lt;vector.txt&gt; -a CA8/morphological.txt
 $ python ana_eval_dense.py -v &lt;vector.txt&gt; -a CA8/semantic.txt
 </code></pre>
@@ -101,7 +104,15 @@ $ python ana_eval_dense.py -v &lt;vector.txt&gt; -a CA8/semantic.txt
 <p>Run the following codes to evaluate your sparse vectors.</p>
 <pre><code>$ python ana_eval_sparse.py -v &lt;vector.txt&gt; -a CA8/morphological.txt
 $ python ana_eval_sparse.py -v &lt;vector.txt&gt; -a CA8/semantic.txt
-</code></pre></div>
+</code></pre>
+
+<h3 id="extrinsic">Extrinsic</h3>
+<p><strong>Text Classification</strong>
+Book Review dataset contains 20,000 positive reviews and 20,000 negative reviews collected from https://book.douban.com/.
+Each review has a star tag rated by users from one star to five stars. We identify one-star and two-star reviews as negative, four-star and five-star reviews as positive.</p>
+<p><strong>Name Entity Recognition</strong>
+Financial NER is a dataset including 3000 financial news articles manually labeled with over 65,000 name entities (people, location and organization).</p>
+<p>They are available at <a href="https://github.com/Embedding/Embedding.github.io/">extrinsic_eval_data.zip</a> in page</p></div>
         </div>
 
         <footer class="col-md-12">
